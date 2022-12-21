@@ -1,7 +1,11 @@
 #include <stdio.h>
 
-/*
- * this programm print a string
+/**
+ * main: entry point 
+ *
+ * Description: 'this programm print a string'
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
