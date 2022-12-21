@@ -1,7 +1,2 @@
 #!/bin/bash
-
-echo "Filename: ${CFILE}"
-
-# Stop at preprocessing and save in file named c
 gcc -E ${CFILE} -o c
-
