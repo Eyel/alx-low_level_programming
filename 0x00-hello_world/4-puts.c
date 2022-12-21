@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: entry point 
+ * main: Entry point
  *
- * Description: 'this programm print a string'
+ * Description: this programm print a string
  *
  * Return: Always 0 (success)
  */
