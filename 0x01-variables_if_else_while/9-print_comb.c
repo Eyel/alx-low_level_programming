@@ -16,7 +16,7 @@ int main(void)
 	n = 0;
 	do {
 		putchar(n + '0');
-		putchar(' ');
+		/* putchar(' '); */
 		putchar(',');
 		n++;
 	} while (n < 9);
