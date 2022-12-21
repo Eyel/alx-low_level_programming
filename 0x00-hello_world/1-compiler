@@ -1,0 +1,3 @@
+#!/bin/bash
+OUTPUTF=`echo ${CFILE} | cut -d'.' -f1` 
+gcc -S ${CFILE} -o ${OUTPUTF}.o
