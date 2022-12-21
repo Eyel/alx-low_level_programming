@@ -24,7 +24,7 @@ int main(void)
 	do {
 		putchar(ch);
 		ch++;
-	} while (ch <='f');
+	} while (ch <= 'f');
 	putchar('\n');
 
 	return (0);
