@@ -17,10 +17,15 @@ int main(void)
 {
 	int len;
 	char *str;
-
+	int i;
 	str = "My first strlen!";
 	len = _strlen(str);
 	printf("%d\n", len);
+
+	/*  */
+	
+	for(i = len-1;i>=0; i--)
+		printf("%c", *(str+i));
 	return (0);
 }
 
