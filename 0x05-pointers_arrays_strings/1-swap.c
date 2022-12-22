@@ -1,17 +1,16 @@
 /* betty style doc for function main goes there */
 /**
- * swap_int - my function
- * @a: the pointer to be updated
- * @b: the pointer to be updated
+ * swap_int - is n pos neg or zero
  *
- * Description: swap values of the two pointers
+ * Description: swap  int
  *
  * Return: void
+ *
  */
 
-void swap_int(int *a, int *b)
+ void swap_int(int *a, int *b)
 {
-	int *n;
+	int *n = (int*) malloc(8*sizeof(int));
 	*n = *a;
 	*a = *b;
 	*b = *n;
