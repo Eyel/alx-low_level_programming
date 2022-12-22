@@ -15,9 +15,7 @@ char* print_rev(char *s)
 {
 	const int len = strlen(s);
 	int i;
-	char *rev;
-
-	rev = malloc(sizeof(*char));
+	char *rev = malloc(sizeof(char));
 	
 	for(i = len - 1; i >= 0; i--)
 		rev[len - i - 1] = s[i];
