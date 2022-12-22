@@ -9,9 +9,9 @@
  *
  */
 
- void swap_int(int *a, int *b)
+void swap_int(int *a, int *b)
 {
-	int *n = (int*) malloc(8*sizeof(int));
+	int *n = (int *) malloc(8 * sizeof(int));
 	*n = *a;
 	*a = *b;
 	*b = *n;
