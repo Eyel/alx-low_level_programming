@@ -12,11 +12,11 @@
 
 void print_rev(char *s)
 {
-	int len = strlen(str);
+	const int len = strlen(s);
 	int i;
 	char rev[len];
 	
 	for(i = len - 1; i >= 0; i--)
-		rev[len - i - 1] = str[i];
+		rev[len - i - 1] = s[i];
 	return (rev);
 }
