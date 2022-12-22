@@ -2,11 +2,12 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - is n pos neg or zero
+ * reset_to_98 - my function
+ * @n: the pointer to be updated
  *
  * Description: updates values to 98
  *
- * Return: always (0) success
+ * Return: void
  */
 
 void reset_to_98(int *n)
