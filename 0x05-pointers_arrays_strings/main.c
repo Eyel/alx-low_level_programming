@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int _strlen(char *s);
+void rev_string(char *s);
 /* betty style doc for function main goes there */
 /**
  * main - is n pos neg or zero
@@ -15,24 +15,27 @@ int _strlen(char *s);
  */
 int main(void)
 {
-	int len;
 	char str[10] = "My School";
-	int i;
-	char rev[strlen(str)];
 	
-	len = _strlen(str);
-	printf("%d\n", len);
+	printf("%s\n", str);
+	rev_string(str);
+	printf("%s\n", str);
 
 	/*  */
-	
-	for(i = len-1;i>=0; i--)
-		rev[len - i - 1] = str[i];
-	printf("%s", rev);
 
 	return (0);
 }
 
-int _strlen(char *s)
+
+void rev_string(char *s)
 {
-	return (strlen(s));
+	const int len = strlen(s);
+	int i;
+	char *rev = malloc(sizeof(char));
+	for (i = len - 1; i >= 0; i--){
+		rev[len - i - 1] = s[i];
+		printf("%d %d %s\n", i, len -i - 1, rev);
+	}
+	strcpy(s, rev);
+	//*s = *rev;
 }
