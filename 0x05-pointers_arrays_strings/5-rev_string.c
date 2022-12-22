@@ -7,11 +7,11 @@
  * @s: string
  * Description: string reverse display
  *
- * Return: str
+ * Return: void
  *
  */
 
-char* rev_string(char *s)
+void rev_string(char *s)
 {
 	const int len = strlen(s);
 	int i;
