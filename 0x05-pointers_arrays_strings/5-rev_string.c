@@ -19,5 +19,5 @@ char* rev_string(char *s)
 	
 	for(i = len - 1; i >= 0; i--)
 		rev[len - i - 1] = s[i];
-	return (rev);
+	s = rev;
 }
