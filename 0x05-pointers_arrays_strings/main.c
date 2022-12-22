@@ -2,8 +2,9 @@
 /* more headers goes there */
 
 #include <stdlib.h>
+#include <string.h>
 
-void swap_int(int *a, int *b);
+int _strlen(char *s);
 /* betty style doc for function main goes there */
 /**
  * main - is n pos neg or zero
@@ -14,21 +15,16 @@ void swap_int(int *a, int *b);
  */
 int main(void)
 {
-	int a;
-	int b;
+	int len;
+	char *str;
 
-	a = 98;
-	b = 42;
-	printf("a=%d, b=%d\n", a, b);
-	swap_int(&a, &b);
-	printf("a=%d, b=%d\n", a, b);
+	str = "My first strlen!";
+	len = _strlen(str);
+	printf("%d\n", len);
 	return (0);
 }
 
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 {
-	int *n = (int*) malloc(8*sizeof(int));
-	*n = *a;
-	*a = *b;
-	*b = *n;
+	return (strlen(s));
 }
