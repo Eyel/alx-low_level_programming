@@ -16,16 +16,19 @@ int _strlen(char *s);
 int main(void)
 {
 	int len;
-	char *str;
+	char str[10] = "My School";
 	int i;
-	str = "My first strlen!";
+	char rev[strlen(str)];
+	
 	len = _strlen(str);
 	printf("%d\n", len);
 
 	/*  */
 	
 	for(i = len-1;i>=0; i--)
-		printf("%c", *(str+i));
+		rev[len - i - 1] = str[i];
+	printf("%s", rev);
+
 	return (0);
 }
 
