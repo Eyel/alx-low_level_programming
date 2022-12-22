@@ -3,7 +3,7 @@
 #include <string.h>
 /* betty style doc for function main goes there */
 /**
- * print_rev - reverse display string
+ * rev_string - reverse display string
  * @s: string
  * Description: string reverse display
  *
@@ -11,7 +11,7 @@
  *
  */
 
-char* print_rev(char *s)
+char* rev_string(char *s)
 {
 	const int len = strlen(s);
 	int i;
