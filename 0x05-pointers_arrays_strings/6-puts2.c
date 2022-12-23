@@ -15,10 +15,9 @@ void puts2(char *s)
 {
 	const int len = strlen(s);
 	int i;
-	char *rev = malloc(sizeof(char));
 
 	for (i = 0; i < len; i = i + 2)
-		puts(s[i]);
+		printf("%c",s[i]);
 	/* *s = *rev; */
-	puts('\n');
+	printf("\n");
 }
