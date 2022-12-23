@@ -14,16 +14,13 @@
 
 void print_array(int *s, int n)
 {
-	const int len = sizeof(s) / sizeof(s[0]);
+	/* const int len = sizeof(s) / sizeof(s[0]); */
 	int nb;
 	int i;
 
-	if (len < n)
-		nb = len;
-	else
-		nb = n;
-	for (i = 0; i < nb-1; i++)
+	
+	for (i = 0; i < n-1; i++)
 		printf("%d, ", s[i]);
 	/* *s = *rev; */
-	printf("%d\n", s[nb-1]);
+	printf("%d\n", s[n-1]);
 }
