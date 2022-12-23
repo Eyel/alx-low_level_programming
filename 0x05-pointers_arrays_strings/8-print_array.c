@@ -16,7 +16,7 @@ void print_array(int *s, int n)
 {
 	/* const int len = sizeof(s) / sizeof(s[0]); */
 	int i;
-	
+
 	for (i = 0; i < n - 1; i++)
 		printf("%d, ", s[i]);
 	/* *s = *rev; */
