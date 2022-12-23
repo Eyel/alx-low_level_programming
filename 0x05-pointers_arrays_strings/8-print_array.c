@@ -14,7 +14,7 @@
 
 void print_array(int *s, int n)
 {
-	const int len = sizeof(s) / sizeof(int);
+	const int len = sizeof(s) / sizeof(s[0]);
 	int nb;
 	int i;
 
