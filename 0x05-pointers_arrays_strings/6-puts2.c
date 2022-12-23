@@ -17,7 +17,7 @@ void puts2(char *s)
 	int i;
 
 	for (i = 0; i < len; i = i + 2)
-		printf("%c",s[i]);
+		printf("%c", s[i]);
 	/* *s = *rev; */
 	printf("\n");
 }
