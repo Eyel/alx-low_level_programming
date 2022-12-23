@@ -19,5 +19,5 @@ void _strcpy(char *dest, char *src)
 	/* char *rev = malloc(sizeof(char)); */
 
 	for (i = 0; i < len; i++)
-		dest[i] = s[i];
+		dest[i] = src[i];
 }
