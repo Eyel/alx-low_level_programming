@@ -21,5 +21,5 @@ void print_array(int *s, int n)
 		printf("%d, ", s[i]);
 	/* *s = *rev; */
 	if (n > 0)
-		printf("%d\n", s[n - 1]);
+		printf("%d\n__", s[n - 1]);
 }
