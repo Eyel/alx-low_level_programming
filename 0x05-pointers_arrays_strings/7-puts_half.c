@@ -17,7 +17,7 @@ void puts_half(char *s)
 	const int hlen = strlen(s) / 2;
 	int i;
 
-	for (i = len - hlen; i < len; i = i + 2)
+	for (i = len - hlen; i < len; i++)
 		printf("%c", s[i]);
 	/* *s = *rev; */
 	printf("\n");
