@@ -19,6 +19,7 @@ void print_alphabet(void)
 	{
 		/* printf(n); */
 		_putchar(n);
+		n++;
 	}
 	/* printf("\n"); */
 	_putchar('\n');
