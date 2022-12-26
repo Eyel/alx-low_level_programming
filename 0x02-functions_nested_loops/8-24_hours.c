@@ -11,7 +11,7 @@ void jack_bauer(void);
  * Return: void
  */
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int hour;
 	int mn;
