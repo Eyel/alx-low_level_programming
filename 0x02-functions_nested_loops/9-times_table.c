@@ -22,7 +22,7 @@ void times_table(void)
 		for (i = 0; i < 9 ;i++)
 		{
 			n = table * i;
-			if (n > 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
+			if (n > 9)
 			{
 				_putchar('0' + n / 10);
 				_putchar('0' + n % 10);
@@ -37,7 +37,7 @@ void times_table(void)
 			_putchar(' ');
 		}
 		n = table * 9;
-		if (n > 10)
+		if (n > 9)
 		{
 			_putchar('0' + n / 10);
 			_putchar('0' + n % 10);
