@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include "main.h"
 
-void times_tables(void);
+void times_table(void);
 /**
- * times_tables- main entry
+ * times_table- main entry
  *
  * Description: print nine tables
  *
  * Return: void
  */
 
-void times_tables(void)
+void times_table(void)
 {
 	int table;
 	int i;
