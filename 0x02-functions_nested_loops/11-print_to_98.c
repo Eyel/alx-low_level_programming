@@ -5,7 +5,7 @@
 void print_to_98(int n);
 /**
  * print_to_98 - main entry
- *
+ * @n : int
  * Description: print up to 98
  *
  * Return: void
@@ -20,8 +20,6 @@ void print_to_98(int n)
 		for (i = n; i < 98; i++)
 		{
 			printf("%d, ", i);
-			/*_putchar(',');
-			_putchar(' ');*/
 		}
 	}
 	else
@@ -29,12 +27,7 @@ void print_to_98(int n)
 		for (i = n; i > 98; i--)
 		{
 			printf("%d, ", i);
-			/*_putchar('0' + i);
-			_putchar(',');
-			_putchar(' ');*/
 		}
 	}
-	/*_putchar('0' + 98)
-	_putchar('\n');*/
 	printf("98\n");
 }
