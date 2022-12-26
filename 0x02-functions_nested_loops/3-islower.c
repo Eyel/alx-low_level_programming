@@ -12,7 +12,7 @@ int _islower(char n);
  */
 
 
-int _islower(char n);
+int _islower(char n)
 {
 	int res = 0;
 	if (islower(n) != 0)
