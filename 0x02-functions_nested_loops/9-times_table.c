@@ -19,33 +19,23 @@ void times_table(void)
 
 	for (table = 0; table < 10; table++)
 	{
-		for (i = 0; i < 9 ;i++)
+
+		_putchar('0');
+		for (i = 1; i < 10 ;i++)
 		{
 			n = table * i;
+			_putchar(',');
+			_putchar(' ');
 			if (n > 9)
 			{
 				_putchar('0' + n / 10);
 				_putchar('0' + n % 10);
-				_putchar(',');
 			}
 			else
 			{
-				_putchar('0' + n);
-				_putchar(',');
 				_putchar(' ');
+				_putchar('0' + n);
 			}
-			_putchar(' ');
-		}
-		n = table * 9;
-		if (n > 9)
-		{
-			_putchar('0' + n / 10);
-			_putchar('0' + n % 10);
-
-		}
-		else
-		{
-			_putchar('0' + n);
 		}
 		_putchar('\n');
 	}
