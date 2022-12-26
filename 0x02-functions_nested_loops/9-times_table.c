@@ -11,7 +11,7 @@ void times_tables(void);
  * Return: void
  */
 
-void times_tables(void);
+void times_tables(void)
 {
 	int table;
 	int i;
