@@ -3,4 +3,4 @@ void print_alphabet_x10(void);
 void _putchar(char n);
 int _islower(char n);
 int _isalpha(char n);
-void print_sign(int n);
+int print_sign(int n);

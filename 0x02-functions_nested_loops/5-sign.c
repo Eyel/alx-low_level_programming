@@ -2,23 +2,32 @@
 #include <stdlib.h>
 #include "main.h"
 
-void print_sign(int n);
+int print_sign(int n);
 /**
  * _print_sign - main entry
  * @n: integer
  * Description: tells sign
  *
- * Return: char
+ * Return: integer 
  */
 
 
-void print_sign(int n)
+int print_sign(int n)
 {
-	char res = '0';
+	int res;
 
 	if (n > 0)
-		res = '+';
+	{
+		_putchar('+');
+		res = 1;
 	else if (n < 0)
-		res = '-';
-	_putchar(res);
+	{
+		_putchar('-');
+		res = -1;
+	}
+	else
+	{
+		
+		_putchar('O');
+		res = 0;
 }
