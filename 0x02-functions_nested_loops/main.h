@@ -1,6 +1,3 @@
-#include <stdio.h>
-
-void print_alphabet(void);
 /**
  * print_alphabet - print alphabet
  *
@@ -9,15 +6,5 @@ void print_alphabet(void);
  * Return: void
  */
 
+void print_alphabet(void);
 
-void print_alphabet(void)
-{
-	char n = 'a';
-
-	while (n <= 'z')
-	{
-		printf(n);
-	}
-	printf("\n");
-
-}
