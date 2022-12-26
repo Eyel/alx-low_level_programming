@@ -28,7 +28,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putchar('O');
+		_putchar('0');
 		res = 0;
 	}
 	return (res);
