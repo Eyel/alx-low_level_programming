@@ -16,8 +16,10 @@ void print_alphabet(void)
 
 	while (n <= 'z')
 	{
-		printf(n);
+		/* printf(n); */
+		_putchar(n);
 	}
-	printf("\n");
+	/* printf("\n"); */
+	_putchar('\n');
 
 }
