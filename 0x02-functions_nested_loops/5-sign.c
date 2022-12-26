@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 
-char print_sign(int n);
+void print_sign(int n);
 /**
  * _print_sign - main entry
  * @n: integer
@@ -12,7 +12,7 @@ char print_sign(int n);
  */
 
 
-char print_sign(int n)
+void print_sign(int n)
 {
 	char res = '0';
 
@@ -20,5 +20,5 @@ char print_sign(int n)
 		res = '+';
 	else if (n < 0)
 		res = '-';
-	return (res);
+	_putchar(res);
 }
