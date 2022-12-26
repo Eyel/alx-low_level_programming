@@ -15,17 +15,31 @@ void times_table(void)
 {
 	int table;
 	int i;
+	int n;
 
 	for (table = 0; table < 10; table++)
 	{
 		for (i = 0; i < 9 ;i++)
 		{
-			_putchar('0' + table * i);
+			n = table * i;
+			if (n > 10)
+			{
+				_putchar('0' + n / 10);
+				_putchar('0' + n % 10);
+			}
+			else
+				_putchar('0' + n);
+			_putchar(' ');
 			_putchar(' ');
 			_putchar(',');
 		}
-
-		_putchar('0' + table * i);
+		if (n > 10)
+		{
+			_putchar('0' + n / 10);
+			_putchar('0' + n % 10);
+		}
+		else
+			_putchar('0' + n);
 		_putchar('\n');
 	}
 }
