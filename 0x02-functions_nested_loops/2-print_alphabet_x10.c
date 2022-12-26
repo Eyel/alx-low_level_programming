@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-void print_alphabet(void);
+void print_alphabet_x10(void);
 /**
  * print_alphabet - print alphabet
  *
@@ -11,7 +11,7 @@ void print_alphabet(void);
  */
 
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char n = 'a';
 	int i = 0;
