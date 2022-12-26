@@ -14,5 +14,8 @@ int _islower(char n);
 
 int _islower(char n);
 {
-	return (islower(n));
+	int res = 0;
+	if (islower(n) != 0)
+		res = 1;
+	return (res);
 }
