@@ -33,6 +33,6 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
-	_putchar('0' + 98);
+	/*_putchar('0' + 98);*/
 	_putchar('\n');
 }
