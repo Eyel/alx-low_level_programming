@@ -4,11 +4,11 @@
 
 int print_sign(int n);
 /**
- * _print_sign - main entry
+ * print_sign - main entry
  * @n: integer
  * Description: tells sign
  *
- * Return: integer 
+ * Return: integer
  */
 
 
