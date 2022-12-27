@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <ctype.h>
 /* betty style doc for function main goes there */
 /**
  * _isupper - upper char
