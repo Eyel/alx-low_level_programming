@@ -10,8 +10,8 @@
 
 int _isupper(char c)
 {
+	int res = 1;
 	if (isupper(c) == 0)
-		return (0);
-	else
-		return (1);
+		res = 0;
+	return (res);
 }
