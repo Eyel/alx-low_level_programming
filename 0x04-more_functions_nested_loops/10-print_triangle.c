@@ -22,4 +22,6 @@ void print_triangle(int size)
 			putchar('#');
 		putchar('\n');
 	}
+	if (size <= 0)
+		printf("\n");
 }
