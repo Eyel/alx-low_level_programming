@@ -2,12 +2,13 @@
 #include <stdlib.h>
 /* betty style doc for function main goes there */
 /**
- * fizz_buzz- fixx buzz and num
- * Return: void
+ * main - fizz buzz and num
+ * Return: int
  *
  */
 
-void fizz_buzz(void)
+
+int main(void)
 {
 	int i;
 
