@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /* betty style doc for function main goes there */
 /**
- * print_squre- draw square
+ * print_square- draw square
  * @size: int
  * Return: void
  *
