@@ -1,4 +1,4 @@
-#include <stdlio.h>
+#include <stdio.h>
 #include <stdlib.h>
 /* betty style doc for function main goes there */
 /**
