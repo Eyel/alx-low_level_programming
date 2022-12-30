@@ -18,5 +18,4 @@ void more_numbers(void)
 			printf("%d", j);
 		putchar('\n');
 	}
-	putchar('\n');
 }
