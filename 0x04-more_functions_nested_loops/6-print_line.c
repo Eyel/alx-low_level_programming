@@ -3,6 +3,7 @@
 /* betty style doc for function main goes there */
 /**
  * print_line- draw line
+ * @n: int 
  * Return: void
  *
  */
