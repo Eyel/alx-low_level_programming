@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 
-void _memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n);
 /**
  * _memset - main entry
  * @s: address
@@ -13,7 +13,7 @@ void _memset(char *s, char b, unsigned int n);
  * Return: void pointer
  */
 
-void _memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	char **s2;
 	unsigned int i = 0;
@@ -34,5 +34,5 @@ void _memset(char *s, char b, unsigned int n)
 	{
 		(*s2)[i] = b;
 	}
-	/*return (*s);*/
+	return (s);
 }
