@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 
-char *_memset(char *s, char b, unsigned int n);
+void _memset(char *s, char b, unsigned int n);
 /**
  * _memset - main entry
  * @s: address
@@ -10,19 +10,29 @@ char *_memset(char *s, char b, unsigned int n);
  * @n: nb replacements
  * Description: fill memory with b, n times
  *
- * Return: pointer
+ * Return: void pointer
  */
 
-char *_memset(char *s, char b, unsigned int n)
+void _memset(char *s, char b, unsigned int n)
 {
-	int l = sizeof(s) / sizeof(s[0]);
-	int i;
-	int n;
+	char **s2;
+	unsigned int i = 0;
+	
+	s2 = &s;
+	/*printf("s2 %d: %d\n", 0, (*s2)[0]);*/
 
-	for (int i = 0; i < (n < l ? n : l); i++)
+	/*while (*s2 && i < 100)*/
+	/*
+	while (i < n)
 	{
-
-		s[i] = b;
+		(*s2)[i] = b;
+		printf("s2 %d: %d\n", i, (*s2)[i]);
+		i++;
 	}
-	return (s);
+	*/
+	for (i = 0; i < n; i++)
+	{
+		(*s2)[i] = b;
+	}
+	/*return (*s);*/
 }
