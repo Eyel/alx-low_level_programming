@@ -19,8 +19,6 @@ char *_memset(char *s, char b, unsigned int n)
 	unsigned int i = 0;
 	
 	s2 = &s;
-	/*printf("s2 %d: %d\n", 0, (*s2)[0]);*/
-
 	/*while (*s2 && i < 100)*/
 	/*
 	while (i < n)
