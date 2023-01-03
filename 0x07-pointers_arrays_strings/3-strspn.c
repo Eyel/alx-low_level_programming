@@ -34,14 +34,14 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			j++;
-		}        
+		}
 	if (trouve == 0)
 	{
 		/*printf("break at %d", i);*/
 		stop = i;
 		break;
 	}
-        else
+	else
 		i++;
 	}
 	/* reverse check*/
@@ -55,9 +55,9 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[i] == s[j])
 			{
 				trouve = 1;
-				break;	
+				break;
 			}
-		}        
+		}
 		if (trouve == 0)
 		{
 			/*printf("break at %d, %c non trouve", i, accept[i]);*/
@@ -67,7 +67,7 @@ unsigned int _strspn(char *s, char *accept)
 		else
 			i++;
 	}
-	if(accept[i] == '\0')
+	if (accept[i] == '\0')
 	{
 		/*printf("\nres _strspn %d", stop);*/
 		res = stop;
