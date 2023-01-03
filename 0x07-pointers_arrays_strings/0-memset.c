@@ -17,17 +17,8 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	char **s2;
 	unsigned int i = 0;
-	
+
 	s2 = &s;
-	/*while (*s2 && i < 100)*/
-	/*
-	while (i < n)
-	{
-		(*s2)[i] = b;
-		printf("s2 %d: %d\n", i, (*s2)[i]);
-		i++;
-	}
-	*/
 	for (i = 0; i < n; i++)
 	{
 		(*s2)[i] = b;
