@@ -3,7 +3,6 @@
 #include "main.h"
 
 unsigned int _strspn(char *s, char *accept);
-char *uniqueChars(char *s);
 
 /**
  * _strspn - main entry
@@ -16,29 +15,62 @@ char *uniqueChars(char *s);
 
 unsigned int _strspn(char *s, char *accept)
 {
-	char **s2;
+	int res = 0;
 	int i = 0;
+	int j = 0;
+	int trouve = 0;
+	unsigned int stop = 0;
 
-	s2 = &s;	
+	/* first bytes */
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		j = 0;
+		trouve = 0;
+		while (accept[j] != '\0' && trouve == 0)
 		{
-			*s2 = &s[i];
+			if (s[i] == accept[j])
+			{
+				trouve = 1;
+				break;
+			}
+			j++;
+		}        
+	if (trouve == 0)
+	{
+		/*printf("break at %d", i);*/
+		stop = i;
+		break;
+	}
+        else
+		i++;
+	}
+	/* reverse check*/
+	i = 0;
+	trouve = 0;
+	while (accept[i] != '\0')
+	{
+		trouve = 0;
+		for (j = 0; j < stop; j++)
+		{
+			if (accept[i] == s[j])
+			{
+				trouve = 1;
+				break;	
+			}
+		}        
+		if (trouve == 0)
+		{
+			/*printf("break at %d, %c non trouve", i, accept[i]);*/
+			/*printf("\nres _strspn 0");*/
 			break;
 		}
 		else
 			i++;
 	}
-	if (s[i] == '\0')
-		*s2 = NULL;
-	return (*s2);
+	if(accept[i] == '\0')
+	{
+		/*printf("\nres _strspn %d", stop);*/
+		res = stop;
+	}
+	return (res);
 }
-
-char *uniqueChars(char *s)
-{
-	char *res;
-}
-
-
-
