@@ -18,7 +18,7 @@ char *_strpbrk(char *s, char *accept)
 	int j = 0;
 	int trouve = 0;
 	int stop = 0;
-	
+
 	/* check bytes */
 	while (s[i] != '\0')
 	{
