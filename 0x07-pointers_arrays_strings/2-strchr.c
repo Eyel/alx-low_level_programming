@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 	char **s2;
 	int i = 0;
 
-	s2 = &s;	
+	s2 = &s;
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
