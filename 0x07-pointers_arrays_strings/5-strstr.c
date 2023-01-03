@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
   int j = 0;
   int stop = 0;
 
-  if (needle == "")
+  if (needle[0] == '\0')
     return (haystack);
   /* check bytes */
   while (haystack[i] != '\0')
