@@ -30,5 +30,7 @@ char *_strchr(char *s, char c)
 	}
 	if (s[i] == '\0')
 		*s2 = NULL;
+	if (c == '\0')
+		*s2 = NULL;
 	return (*s2);
 }
