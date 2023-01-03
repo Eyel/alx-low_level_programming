@@ -19,15 +19,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	unsigned int i = 0;
 	
 	s2 = &dest;
-	/*while (*s2 && i < 100)*/
-	/*
-	while (i < n)
-	{
-		(*s2)[i] = b;
-		printf("s2 %d: %d\n", i, (*s2)[i]);
-		i++;
-	}
-	*/
 	for (i = 0; i < n; i++)
 	{
 		(*s2)[i] = src[i];
