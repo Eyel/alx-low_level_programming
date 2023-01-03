@@ -17,7 +17,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int res = 0;
 	int i = 0;
-	int j = 0;
+	unsigned int j = 0;
 	int trouve = 0;
 	unsigned int stop = 0;
 
