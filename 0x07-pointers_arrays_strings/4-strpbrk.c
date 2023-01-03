@@ -14,12 +14,10 @@ char *_strpbrk(char *s, char *accept);
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *res = "";
 	int i = 0;
 	int j = 0;
 	int trouve = 0;
 	int stop = 0;
-	int n;
 	
 	/* check bytes */
 	while (s[i] != '\0')
