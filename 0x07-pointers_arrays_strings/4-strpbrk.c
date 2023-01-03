@@ -14,21 +14,32 @@ char *_strpbrk(char *s, char *accept);
 
 char *_strpbrk(char *s, char *accept)
 {
-	char **s2;
+	char *res = "";
 	int i = 0;
-
-	s2 = &s;	
+	int j = 0;
+	int trouve = 0;
+	int stop = 0;
+	int n;
+	
+	/* check bytes */
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		j = 0;
+		while (accept[j] != '\0' && trouve == 0)
 		{
-			*s2 = &s[i];
-			break;
+			if (s[i] == accept[j])
+			{
+				trouve = 1;
+				stop = i;
+				break;
+			}
+			j++;
 		}
-		else
-			i++;
+		i++;
 	}
-	if (s[i] == '\0')
-		*s2 = NULL;
-	return (*s2);
+	/* return */
+	if (stop != 0)
+		return (s + stop);
+	else
+		return (NULL);
 }
