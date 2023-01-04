@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 int is_palindrome(char *s);
@@ -14,13 +15,9 @@ int is_palindrome(char *s);
 int is_palindrome(char *s)
 {
 	char *p = s;
-	int i = 0;
+	int i = strlen(s);
 	int res = 0;
 
-	while (s[i] != '\0')
-	{
-		i++;
-	}
 	if (i > 1)
 	{
 		if (s[0] == s[i - 1])
